@@ -2,11 +2,13 @@ import "./App.css";
 import { Heading } from "./components/Heading";
 
 function App() {
-  var num1 = 100;
-  var fun1 = () => "Manavi";
+  let flag = 0;
+  let arr1 = ["Eggs", "Fruits", "Bread"];
   return (
     <>
-      <Heading />
+      {!flag && <div>Hello</div>}
+      {flag ? "True" : "False"}
+      <Heading foodItems={arr1} />
     </>
   );
 }
