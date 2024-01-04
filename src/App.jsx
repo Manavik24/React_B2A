@@ -1,12 +1,19 @@
 import "./App.css";
-import { Heading } from "./components/Heading";
 
 function App() {
-  var num1 = 100;
-  var fun1 = () => "Manavi";
+  let num1 = 100;
+  let fun1 = () => "Manavi";
+  let foodArray = ["Dal", "Roti", "Rice"];
   return (
     <>
-      <Heading />
+      <p>
+        I am {fun1()} and my number is {num1}
+      </p>
+      <ol>
+        {foodArray.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ol>
     </>
   );
 }
