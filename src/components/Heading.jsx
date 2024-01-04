@@ -1,9 +1,7 @@
 import React from "react";
 
 export function Heading() {
-  return <div>Heading</div>;
-}
-
-export default function Default() {
-  return <div>Default</div>;
+  return (
+    <div style={{ backgroundColor: "pink", color: "red" }}>I am a heading</div>
+  );
 }
